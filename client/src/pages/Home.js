@@ -38,6 +38,7 @@ const FETCH_POSTS_QUERY = gql`
       body
       createdAt
       username
+      likeCount
       likes {
         username
       }
