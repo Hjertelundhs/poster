@@ -42,6 +42,13 @@ function MenuBar() {
           as={Link}
           to="/register"
         />
+        <Menu.Item
+          name="news"
+          active={activeItem === 'news'}
+          onClick={handleItemClick}
+          as={Link}
+          to="/news"
+        />
       </Menu.Menu>
     </Menu>
   );
