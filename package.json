@@ -1,14 +1,18 @@
 {
   "name": "poster",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "node index",
-    "start": "nodemon index",
+    "start": "node index",
     "client": "npm start --prefix client",
     "server": "npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
